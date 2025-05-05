@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuniTalk - Forum Tunisien</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="home.html" class="logo">
+                <img src="tunitalk.png" alt="TuniTalk" onmouseover="highlightInput(this)"
+                onmouseout="unhighlightInput(this)">
+                <span onmouseover="highlightInput(this)"
+                onmouseout="unhighlightInput(this)">TuniTalk</span>
+            </a>
+            <div class="nav-links">
+                <a href="home.html" class="active"><i class="fas fa-home"></i> Accueil</a>
+                <a href="communities.html"><i class="fas fa-globe"></i> Communautés</a>
+                <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="profile1.html"><i class="fas fa-user-circle"></i> Profil</a>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn"><i class="fas fa-sign-in-alt"></i> Connexion</a>
+                    <a href="register.html" class="btn btn-primary"><i class="fas fa-user-plus"></i> Inscription</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Bannière d'accueil -->
+    <header class="hero">
+        <div class="container">
+            <h1>Bienvenue sur TuniTalk</h1>
+            <p>La communauté en ligne des tunisiens pour échanger et partager</p>
+            <form class="search-form">
+                <input type="text" onmouseover="highlightInput(this)"
+                onmouseout="unhighlightInput(this)" placeholder="Rechercher dans le forum...">
+                <button type="submit" onmouseover="highlightInput(this)"
+                onmouseout="unhighlightInput(this)"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+    <div class="create-topic-container">
+        <h1>Créer un nouveau sujet</h1>
+        <form class="create-topic-form">
+            <input type="text" placeholder="Titre" required>
+            <textarea placeholder="Contenu..." required></textarea>
+            <button type="submit">Publier</button>
+        </form>
+    </div>
+      
+      <div id="posts-container"></div>
+
+    <!-- Contenu principal -->
+    <main class="container">
+        <!-- Section actualités -->
+        <section class="news-section">
+            <h2><i class="fas fa-newspaper"></i> Actualités</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <img src="actualite.jpg" class="img" alt="Actualité">
+                    <h3>Préparation pour le mois de Ramadan</h3>
+                    <p>Les Tunisiens préparent pour Rama...</p>
+                    <a href="#" class="read-more">Lire plus</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Catégories principales -->
+        <section class="categories">
+            <h2><i class="fas fa-comments"></i> Discussions Populaires</h2>
+            <div class="category-list">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Économie & Finance</h3>
+                        <p>125 sujets • 542 messages</p>
+                        <div class="last-post">
+                            <small>Dernier message par <strong>Ahmed</strong> il y a 2h</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-drumstick-bite"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Cuisine Tunisienne</h3>
+                        <p>100 sujets • 459 messages</p>
+                        <div class="last-post">
+                            <small>Dernier message par <strong>Mariem</strong> il y a 7h</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h4>À propos</h4>
+                    <a href="#">Conditions d'utilisation</a>
+                    <a href="#">Politique de confidentialité</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Règles du forum</h4>
+                    <ol class="rules-list"></ol>
+                        <li>Respectez les autres membres</li>
+                        <li>Pas de contenu illégal</li>
+                        <li>Restez sur le sujet</li>
+                        <li>Pas de publicité</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 TuniTalk - Tous droits réservés</p>
+                <p>Forum made with ❤️ in Tunisia</p>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

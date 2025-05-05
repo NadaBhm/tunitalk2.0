@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Utilisateur - TuniTalk</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="home.html" class="logo">
+                <img src="tunitalk.png" alt="TuniTalk">
+                <span>TuniTalk</span>
+            </a>
+            <div class="nav-links">
+                <a href="home.html" class="active"><i class="fas fa-home"></i> Accueil</a>
+                <a href="communities.html"><i class="fas fa-globe"></i> Communautés</a>
+                <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="profile1.html"><i class="fas fa-user-circle"></i> Profil</a>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn"><i class="fas fa-sign-in-alt"></i> Connexion</a>
+                    <a href="register.html" class="btn btn-primary"><i class="fas fa-user-plus"></i> Inscription</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container profile-container">
+        <div class="profile-header">
+            <div class="profile-avatar">
+                <img src="avatar.png" alt="Avatar">
+                <button class="btn-edit"><i class="fas fa-pencil-alt"></i></button>
+            </div>
+            <div class="profile-info">
+                <h1>Mohamed Ben Ali</h1>
+                <p class="member-since"><i class="fas fa-user-clock"></i> Membre depuis mars 2020</p>
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">142</span>
+                        <span class="stat-label">Messages</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24</span>
+                        <span class="stat-label">Sujets</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">589</span>
+                        <span class="stat-label">Points</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-content">
+            <section class="profile-activity">
+                <h2><i class="fas fa-history"></i> Activité récente</h2>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <i class="fas fa-comment activity-icon"></i>
+                        <div class="activity-details">
+                            <p>A répondu dans <a href="thread.html">Discussion sur le tourisme</a></p>
+                            <small>Il y a 2 heures</small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="profile-details">
+                <h2><i class="fas fa-info-circle"></i> Informations personnelles</h2>
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <label><i class="fas fa-map-marker-alt"></i> Localisation:</label>
+                        <span>Tunis</span>
+                    </div>
+                    <div class="detail-item">
+                        <label><i class="fas fa-briefcase"></i> Profession:</label>
+                        <span>Ingénieur informatique</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h4>À propos</h4>
+                    <a href="#">Conditions d'utilisation</a>
+                    <a href="#">Politique de confidentialité</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Règles du forum</h4>
+                    <ol class="rules-list"></ol>
+                        <li>Respectez les autres membres</li>
+                        <li>Pas de contenu illégal</li>
+                        <li>Restez sur le sujet</li>
+                        <li>Pas de publicité</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 TuniTalk - Tous droits réservés</p>
+                <p>Forum made with ❤️ in Tunisia</p>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
